@@ -9,31 +9,43 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
-```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
-```
-
-
 <details><summary>Worldwide</summary>
 
-* [tree cover density](https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density)
-* [motorways](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* another data source
+* yet another data source
     
 </details>
 
 
 <details><summary><b>Europe</b></summary>
 
-* [tree cover density](https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density)
+* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
 * another data source
+* yet another data source
 
 </details>
 
 
-```{r, layout="l-screen"}
-knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
-```
+<details><summary><b>Germany</b></summary>
+
+* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* another data source
+* yet another data source
+
+</details>
+
+
+<details><summary><b>Berlin & Brandenburg</b></summary>
+
+* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* another data source
+* yet another data source
+
+</details>
+
+
+
 
 ## Contact {.appendix}
 
