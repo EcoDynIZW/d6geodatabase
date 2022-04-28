@@ -1,0 +1,50 @@
+---
+title: "D6 GIS Database"
+description: |
+  This webpage provides a quick look-up source for spatial data available for studies at the IZW Department of Ecological Dynamics
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
+```
+
+
+<details><summary>Worldwide</summary>
+
+* [tree cover density](https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density)
+* [motorways](/motorways_germany_2022_03035_osm_tif.html)
+    
+</details>
+
+
+<details><summary><b>Europe</b></summary>
+
+* [tree cover density](https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density)
+* another data source
+
+</details>
+
+
+```{r, layout="l-screen"}
+knitr::include_graphics("img/meckpom-csf-inferno-cut-bottom.png")
+```
+
+## Contact {.appendix}
+
+Department Lead: Prof. Dr. S. Kramer-Schadt  
+Deputy Lead: Dr. Andreas Wilting  
+Geo Data Manager: Moritz Wenzler-Meya
+<a href="mailto:wenzler@izw-berlin.de">wenzler[at]izw-berlin.de</a>  
+
+## Address {.appendix}
+
+Leibniz Institute for Zoo and Wildlife Research  
+Department of Ecological Dynamics  
+Alfred-Kowalke-Str. 17  
+D-10315 Berlin, Germany 

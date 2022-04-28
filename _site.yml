@@ -1,0 +1,19 @@
+name: "d6-gis-database"
+title: "D6 GIS Database"
+description: |
+  D6 GIS Data
+output_dir: "docs"
+favicon: img/d6_purple_round.png
+theme: "d6theme.css"
+twitter:
+  site: "@EcoDynIZW"
+navbar:
+  logo:
+    image: img/d6_white.png
+  search: true
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
