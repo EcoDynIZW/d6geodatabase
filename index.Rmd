@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <details><summary>Worldwide</summary>
 
-* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
 * another data source
 * yet another data source
     
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <details><summary><b>Europe</b></summary>
 
-* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
 * another data source
 * yet another data source
 
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <details><summary><b>Germany</b></summary>
 
-* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
 * another data source
 * yet another data source
 
@@ -38,7 +38,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <details><summary><b>Berlin & Brandenburg</b></summary>
 
-* [motorways (2022)](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
+* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
 * another data source
 * yet another data source
 
