@@ -1,5 +1,5 @@
 ---
-title: "About this site"
+title: "About the D6 Geo Databse"
 description: |
   Some additional details about the website
 ---
