@@ -18,7 +18,7 @@ knitr::include_graphics("img/meckpom-csf-inferno-cut-top.png")
 <details><summary>Worldwide</summary>
 
 * [tree cover density](https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density)
-* [motorways](/motorways_germany_2022_03035_osm_tif.html)
+* [motorways](/d6-gis-database/reports/motorways_germany_2022_03035_osm_tif.html)
     
 </details>
 
