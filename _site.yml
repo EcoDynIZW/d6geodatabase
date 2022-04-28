@@ -14,4 +14,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - icon: fa fa-home
+      href: https://ecodynizw.github.io/EcoDynIZW
+    - icon: fa fa-twitter
+      href: https://twitter.com/EcoDynIZW
 output: distill::distill_article
