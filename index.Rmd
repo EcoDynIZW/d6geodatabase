@@ -9,6 +9,55 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+```{r}
+library(tidyverse)
+# get_rmds <- function(x){
+#   origin <- unlist(stringi::stri_split(x, regex = "_"))[2]
+#   year <- unlist(stringi::stri_split(x, regex = "_"))[3]
+#   
+#   paste0("* [", origin, " (", year, ")](/d6geodatabase/reports/", 
+#                gsub(pattern = ".rmd", replacement = ".html", x = x), ")")
+# }
+# 
+# get_origins <- lapply(list.files(here::here(), pattern = ".rmd$"), 
+#                   function(x){
+#                  unlist(stringi::stri_split(x, regex = "_"))[2]   
+#   }) %>% unlist() %>% unique()
+
+####
+
+data_table <- do.call(rbind, lapply(list.files(here::here(), pattern = , ".rmd$"), 
+                     function(x){
+  tibble(path = x) %>% 
+  dplyr::mutate(what = unlist(stringi::stri_split(path, regex = "_"))[1],
+    origin = unlist(stringi::stri_split(path, regex = "_"))[2],
+                year = unlist(stringi::stri_split(path, regex = "_"))[3])
+  }))
+
+
+# unlist(lapply(unique(data_table$origin), function(x){
+#   tab <- data_table %>% 
+#     filter(origin %in% x)
+#   
+#   distill_tab <- tibble()
+#   paste0("* [", tab$origin, " (", tab$year, ")](/d6geodatabase/reports/", 
+#                gsub(pattern = ".rmd", replacement = ".html", x = tab$path), ")")
+#     
+# }))
+```
+
+`r unlist(lapply(unique(data_table$origin), function(x){
+  tab <- data_table %>% 
+    filter(origin %in% x)
+  
+  distill_tab <- tibble()
+  paste0("* [", tab$what, " (", tab$year, ")](/d6geodatabase/reports/", 
+               gsub(pattern = ".rmd", replacement = ".html", x = tab$path), ")")
+    
+}))`
+
+
 <details><summary>Worldwide</summary>
 
 * [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
