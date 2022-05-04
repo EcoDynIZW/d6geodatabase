@@ -32,19 +32,25 @@ data_table <- do.call(rbind, lapply(list.files(here::here(), pattern = , ".rmd$"
   tibble(path = x) %>% 
   dplyr::mutate(what = unlist(stringi::stri_split(path, regex = "_"))[1],
     origin = unlist(stringi::stri_split(path, regex = "_"))[2],
-                year = unlist(stringi::stri_split(path, regex = "_"))[3])
+                year = unlist(stringi::stri_split(path, regex = "_"))[3]) %>% 
+  dplyr::mutate(link = paste0("* [", origin, " (", year, ")](/d6geodatabase/reports/",
+               gsub(pattern = ".rmd", replacement = ".html", x = path), ")"))
   }))
 
 
-# unlist(lapply(unique(data_table$origin), function(x){
-#   tab <- data_table %>% 
-#     filter(origin %in% x)
-#   
-#   distill_tab <- tibble()
-#   paste0("* [", tab$origin, " (", tab$year, ")](/d6geodatabase/reports/", 
-#                gsub(pattern = ".rmd", replacement = ".html", x = tab$path), ")")
-#     
-# }))
+# header is missing, has to build automatically for all origins. Maybe use differnt tables for that, nested in a big function
+
+unlist(lapply(unique(data_table$origin), function(x){
+  
+  tab <- data_table %>%
+    filter(origin %in% x) 
+  
+  paste0("<details><summary>", tab$origin ,"</summary>",
+         tab %>% dplyr::select(link))
+    
+
+
+}))
 ```
 
 `r unlist(lapply(unique(data_table$origin), function(x){
