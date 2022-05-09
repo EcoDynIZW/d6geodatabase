@@ -10,90 +10,38 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-```{r}
+```{r data, include=FALSE}
 library(tidyverse)
-# get_rmds <- function(x){
-#   origin <- unlist(stringi::stri_split(x, regex = "_"))[2]
-#   year <- unlist(stringi::stri_split(x, regex = "_"))[3]
-#   
-#   paste0("* [", origin, " (", year, ")](/d6geodatabase/reports/", 
-#                gsub(pattern = ".rmd", replacement = ".html", x = x), ")")
-# }
-# 
-# get_origins <- lapply(list.files(here::here(), pattern = ".rmd$"), 
-#                   function(x){
-#                  unlist(stringi::stri_split(x, regex = "_"))[2]   
-#   }) %>% unlist() %>% unique()
 
-####
+# a table that collects all information
 
-data_table <- do.call(rbind, lapply(list.files(here::here(), pattern = , ".rmd$"), 
+data_table <- base::do.call(base::rbind, lapply(list.files(here::here(), pattern = , ".rmd$"), 
                      function(x){
   tibble(path = x) %>% 
   dplyr::mutate(what = unlist(stringi::stri_split(path, regex = "_"))[1],
     origin = unlist(stringi::stri_split(path, regex = "_"))[2],
-                year = unlist(stringi::stri_split(path, regex = "_"))[3])
+                year = unlist(stringi::stri_split(path, regex = "_"))[3]) %>% 
+  plyr::mutate(distill = paste0("* [", what, " (", year, ")](/d6geodatabase/reports/",
+               gsub(pattern = ".rmd", replacement = ".html", x = path), ")"))
   }))
 
+# a function, thats create the input for the inline code
 
-# unlist(lapply(unique(data_table$origin), function(x){
-#   tab <- data_table %>% 
-#     filter(origin %in% x)
-#   
-#   distill_tab <- tibble()
-#   paste0("* [", tab$origin, " (", tab$year, ")](/d6geodatabase/reports/", 
-#                gsub(pattern = ".rmd", replacement = ".html", x = tab$path), ")")
-#     
-# }))
+data_list <- lapply(unique(data_table$origin), function(x){
+  tab <- data_table %>%
+    dplyr::filter(origin %in% x)
+  
+  stringi::stri_c(
+    stringi::stri_c("<details><summary>", x,"</summary>"),
+    stringi::stri_c(tab$distill, collapse = "\n"),
+    stringi::stri_c("</details>"), 
+    collapse = "\n")
+
+})
+
 ```
 
-`r unlist(lapply(unique(data_table$origin), function(x){
-  tab <- data_table %>% 
-    filter(origin %in% x)
-  
-  distill_tab <- tibble()
-  paste0("* [", tab$what, " (", tab$year, ")](/d6geodatabase/reports/", 
-               gsub(pattern = ".rmd", replacement = ".html", x = tab$path), ")")
-    
-}))`
-
-
-<details><summary>Worldwide</summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-    
-</details>
-
-
-<details><summary><b>Europe</b></summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-
-</details>
-
-
-<details><summary><b>Germany</b></summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-
-</details>
-
-
-<details><summary><b>Berlin & Brandenburg</b></summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-
-</details>
-
-
+`r stringi::stri_c(unlist(data_list), collapse = "\n")`
 
 
 ## Contact {.appendix}

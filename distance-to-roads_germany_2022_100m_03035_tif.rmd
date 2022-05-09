@@ -11,6 +11,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
                       dev = "ragg_png", fig.width = 9, fig.height = 6, dpi = 600, retina = 1)
 Sys.setlocale("LC_TIME", "C")
+
+Sys.setenv("RSTUDIO_VERSION" = '2022.02.0+443')
 ```
 
 
@@ -32,9 +34,9 @@ sapply(list("tidyverse", "here", "ggplot2", "raster", "terra", "cowplot"),
 
 
 ```{r, include = FALSE}
-path <- paste("D:/PopDynIZW Dropbox/GeoData", 
-              unlist(stringi::stri_split(knitr::current_input(), regex = "_"))[2], 
-              knitr::current_input(), 
+path <- paste("D:/PopDynIZW Dropbox/GeoData/data-proc", 
+              unlist(stringi::stri_split(rstudioapi::getSourceEditorContext()$path, regex = "_"))[2], 
+                gsub(".rmd$", "", unlist(stringi::stri_split(rstudioapi::getSourceEditorContext()$path, regex = "/"))[4]), 
               sep = "/")
 
 meta <- utils::read.csv(list.files(path, pattern = ".csv$", recursive = TRUE, full.names = TRUE)) %>% 
