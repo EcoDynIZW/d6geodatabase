@@ -6,13 +6,13 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-05-06T13:12:18+02:00"
+      "last_modified": "2022-05-09T10:13:40+02:00"
     },
     {
       "path": "distance-to-roads_germany_2022_100m_03035_tif.html",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\nSession Info\r\n\r\n\r\n## DO NOT REMOVE!\r\n## We store the settings of your computer and the current versions of the\r\n## packages used to allow for reproducibility\r\nSys.time()\r\n\r\n\r\n[1] \"2022-05-06 12:33:16 CEST\"\r\n\r\n#git2r::repository() ## uncomment if you are using GitHub\r\nsessionInfo()\r\n\r\n\r\nR version 4.1.2 (2021-11-01)\r\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\r\nRunning under: Windows 10 x64 (build 19042)\r\n\r\nMatrix products: default\r\n\r\nlocale:\r\n[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   \r\n[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   \r\n[5] LC_TIME=C                      \r\n\r\nattached base packages:\r\n[1] stats     graphics  grDevices utils     datasets  methods  \r\n[7] base     \r\n\r\nother attached packages:\r\n [1] cowplot_1.1.1   terra_1.5-21    raster_3.5-15   sp_1.4-6       \r\n [5] here_1.0.1      forcats_0.5.1   stringr_1.4.0   dplyr_1.0.7    \r\n [9] purrr_0.3.4     readr_2.1.2     tidyr_1.2.0     tibble_3.1.3   \r\n[13] ggplot2_3.3.5   tidyverse_1.3.1\r\n\r\nloaded via a namespace (and not attached):\r\n [1] fs_1.5.2           sf_1.0-7           lubridate_1.7.10  \r\n [4] webshot_0.5.2      httr_1.4.2         rprojroot_2.0.3   \r\n [7] tools_4.1.2        backports_1.4.1    bslib_0.3.1       \r\n[10] rgdal_1.5-28       utf8_1.2.2         R6_2.5.1          \r\n[13] KernSmooth_2.23-20 DBI_1.1.2          colorspace_2.0-3  \r\n[16] withr_2.5.0        processx_3.5.2     tidyselect_1.1.2  \r\n[19] downlit_0.4.0      compiler_4.1.2     textshaping_0.3.6 \r\n[22] cli_3.2.0          rvest_1.0.2        flextable_0.7.0   \r\n[25] xml2_1.3.3         officer_0.4.1      labeling_0.4.2    \r\n[28] sass_0.4.0         scales_1.1.1       classInt_0.4-3    \r\n[31] proxy_0.4-26       callr_3.7.0        systemfonts_1.0.4 \r\n[34] digest_0.6.29      rmarkdown_2.13     base64enc_0.1-3   \r\n[37] pkgconfig_2.0.3    htmltools_0.5.2    highr_0.9         \r\n[40] dbplyr_2.1.1       fastmap_1.1.0      rlang_1.0.2       \r\n[43] readxl_1.3.1       rstudioapi_0.13    farver_2.1.0      \r\n[46] jquerylib_0.1.4    generics_0.1.2     jsonlite_1.8.0    \r\n[49] zip_2.2.0          distill_1.3        magrittr_2.0.2    \r\n[52] Rcpp_1.0.7         munsell_0.5.0      fansi_0.5.0       \r\n[55] abind_1.4-5        gdtools_0.2.4      lifecycle_1.0.1   \r\n[58] stringi_1.7.6      yaml_2.3.5         grid_4.1.2        \r\n[61] parallel_4.1.2     crayon_1.5.1       lattice_0.20-45   \r\n[64] stars_0.5-5        haven_2.4.3        hms_1.1.1         \r\n[67] magick_2.7.3       ps_1.6.0           knitr_1.38        \r\n[70] pillar_1.7.0       uuid_1.0-3         codetools_0.2-18  \r\n[73] reprex_2.0.1       glue_1.6.2         evaluate_0.15     \r\n[76] data.table_1.14.2  modelr_0.1.8       vctrs_0.3.8       \r\n[79] tzdb_0.2.0         cellranger_1.1.0   gtable_0.3.0      \r\n[82] assertthat_0.2.1   cachem_1.0.6       xfun_0.30         \r\n[85] lwgeom_0.2-8       broom_0.7.12       e1071_1.7-9       \r\n[88] class_7.3-19       ragg_1.2.2         memoise_2.0.1     \r\n[91] units_0.8-0        ellipsis_0.3.2    \r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-05-06T12:33:19+02:00"
+      "last_modified": "2022-05-09T09:50:31+02:00"
     },
     {
       "path": "index.html",
@@ -20,7 +20,7 @@
       "description": "This webpage provides a quick look-up source for geospatial data available for studies at the IZW Department of Ecological Dynamics.\n",
       "author": [],
       "contents": "\r\n\r\ngermany\r\ndistance-to-roads\r\n(2022)\r\nContact\r\nDepartment Lead: Prof. Dr. S. Kramer-Schadt\r\nDeputy Lead: Dr. Andreas Wilting\r\nGeo Data Manager: Moritz Wenzler-Meya\r\nwenzler[at]izw-berlin.de\r\nAddress\r\nLeibniz Institute for Zoo and Wildlife Research\r\nDepartment of Ecological Dynamics\r\nAlfred-Kowalke-Str. 17\r\nD-10315 Berlin, Germany\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-05-06T13:12:18+02:00"
+      "last_modified": "2022-05-09T10:13:40+02:00"
     }
   ],
   "collections": []
