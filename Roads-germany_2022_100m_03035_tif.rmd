@@ -23,7 +23,7 @@ sapply(list('tidyverse', 'here', 'ggplot2', 'raster', 'terra', 'cowplot'),
 
 ```{r, include = FALSE}
 path <- 
-"C:/Users/wenzler/PopDynIZW Dropbox/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif"
+"C:/Users/wenzler/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads-germany_2022_100m_03035_tif"
 
 
 meta_raw <- utils::read.csv2(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE))
