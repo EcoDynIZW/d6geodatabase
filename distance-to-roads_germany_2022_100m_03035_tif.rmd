@@ -1,75 +1,51 @@
 ---
-output: 
+output:
     distill::distill_article:
         highlight: kate      ## styling of code
-        code_folding: false  ## if `true` you can expand and shrink code chunks
-        toc: true            ## if `true` adds a table of content
+        code_folding: false  ## if 'true' you can expand and shrink code chunks
+        toc: true            ## if 'true' adds a table of content
         toc_depth: 2         ## level to be displayed in the table of content
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
-                      dev = "ragg_png", fig.width = 9, fig.height = 6, dpi = 600, retina = 1)
-Sys.setlocale("LC_TIME", "C")
 
-Sys.setenv("RSTUDIO_VERSION" = '2022.02.0+443')
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+dev = 'ragg_png', fig.width = 9, fig.height = 6, dpi = 600, retina = 1)
+Sys.setlocale('LC_TIME', 'C')
 ```
 
 
-
 ```{r packages, echo = FALSE, warning=FALSE, message=FALSE, include = FALSE}
-sapply(list("tidyverse", "here", "ggplot2", "raster", "terra", "cowplot"), 
+sapply(list('tidyverse', 'here', 'ggplot2', 'raster', 'terra', 'cowplot'),
        library, character.only = TRUE, logical.return = TRUE)
 ```
 
 
 ```{r, include = FALSE}
-#path <- here::here("D:/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads_germany_2022_100m_03035_tif")
-
-# meta_path <- here::here("D:/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads_germany_2022_100m_03035_tif/meta_data_Roads_germany_2022_100m_03035_tif.csv")
-# 
-# tif_path <- here::here("D:/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads_germany_2022_100m_03035_tif/Roads_germany_2022_100m_03035.tif")
-```
+path <- 
+"C:/Users/wenzler/PopDynIZW Dropbox/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif"
 
 
-
-```{r, include = FALSE}
-path <- paste("D:/PopDynIZW Dropbox/GeoData/data-proc", 
-              unlist(stringi::stri_split(rstudioapi::getSourceEditorContext()$path, regex = "_"))[2], 
-                gsub(".rmd$", "", unlist(stringi::stri_split(rstudioapi::getSourceEditorContext()$path, regex = "/"))[4]), 
-              sep = "/")
-
-meta <- utils::read.csv(list.files(path, pattern = ".csv$", recursive = TRUE, full.names = TRUE)) %>% 
+meta <- utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character)) %>%
-      tidyr::pivot_longer(cols = c("folder_name",
-                        "name",
-                        "crs",
-                        "epsg",
-                        "year_of_data",
-                        "units_of_data",
-                        "type_of_data",
-                        "source",
-                        "link_of_source",
-                        "date_of_download",
-                        "short_description",
-                        "modified"),
-                          names_to = "column", values_to = "input") %>%
+      tidyr::pivot_longer(cols = dplyr::everything(),
+                          names_to = 'column', values_to = 'input') %>%
   flextable::flextable() %>% flextable::autofit()
-  
-tif <- raster::raster(list.files(path, pattern = ".tif$", recursive = TRUE, full.names = TRUE))
+
+tif <- raster::raster(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 
 
 ```
 
 
-```{r, layout="l-body-outset", echo = FALSE, warning=FALSE, message=FALSE}
+```{r, layout='l-body-outset', echo = FALSE, warning=FALSE, message=FALSE}
 
-text_plot <- ggplot2::ggplot() + 
-  ggplot2::theme_void() + 
+text_plot <- ggplot2::ggplot() +
+  ggplot2::theme_void() +
   ggplot2::annotation_custom(
 grid::rasterGrob(meta %>% flextable::as_raster()), xmin=-Inf, xmax=Inf, ymin=-Inf, ymax=Inf)
 
-title <- ggdraw() + 
+title <- ggdraw() +
   draw_label(
     meta$folder_name,
     fontface = 'bold',
@@ -84,25 +60,21 @@ tif_plot <- ggplot2::ggplot() +
   stars::geom_stars(data = stars::st_as_stars(tif)) +
     scale_fill_continuous(low=grey(0), # here you can set another color palette
                           high=grey(1),
-                          guide="colorbar",
-                          na.value="transparent",
-                          name = "") +
+                          guide='colorbar',
+                          na.value='transparent',
+                          name = '') +
   ggplot2::theme_void()
 
 
 plot_grid(
-  title, cowplot::plot_grid(tif_plot, text_plot, 
-                   nrow = 1, ncol = 2, 
+  title, cowplot::plot_grid(tif_plot, text_plot,
+                   nrow = 1, ncol = 2,
                    rel_heights = c(0.8, 1) ),
   ncol = 1,
   # rel_heights values control vertical title margins
   rel_heights = c(0.1, 1)
 )
 
-# ggsave(here("data-raw", "2017_aves_de_b_abundance_planillo", "2017_aves_de_b_abundance_planillo.pdf"), plot = last_plot(), device = "pdf",
-#        width = 20, height = 20, units = "cm")
-
- 
 ```
 
 
