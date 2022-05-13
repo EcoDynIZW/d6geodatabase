@@ -26,7 +26,7 @@ path <-
 "D:/PopDynIZW Dropbox/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif"
 
 
-meta_raw <- utils::read.csv2(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE))
+meta_raw <- utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE))
 
 meta_tab <- meta_raw %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character)) %>%
