@@ -32,7 +32,7 @@ ggplot2::theme_update(
 
 
 ```{r data-import}
-path <- "C:/Users/DataVizard/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads-germany_2022_100m_03035_tif"
+path <- "C:/Users/scherer/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads-germany_2022_100m_03035_tif"
 
 meta <- 
   utils::read.csv2(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -40,12 +40,12 @@ meta <-
 
 tif <- 
   terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE)) %>% 
-  #terra::aggregate(fact = 20, fun = function(x) ifelse(sum(x, na.rm = TRUE) >= 1, 1, 0)) ## just for now to simulate binary
+  terra::aggregate(fact = 20, fun = function(x) ifelse(sum(x, na.rm = TRUE) >= 1, 1, 0)) ## just for now to simulate binary
   #terra::aggregate(fact = 20, fun = function(x) ifelse(sum(x, na.rm = TRUE) >= 1, sum(x, na.rm = TRUE) / 100, 0)) ## just for now to simulate quantitative
-  terra::aggregate(fact = 20, fun = function(x) ifelse(sum(x, na.rm = TRUE) >= 1, floor(sum(x, na.rm = TRUE) / 100), 0)) ## just for now to simulate qualitative
+  #terra::aggregate(fact = 20, fun = function(x) ifelse(sum(x, na.rm = TRUE) >= 1, floor(sum(x, na.rm = TRUE) / 100), 0)) ## just for now to simulate qualitative
 ```
 
-```{r data-table}
+```{r data-table, layout='l-page'}
 meta_tbl <- 
   meta %>%
   tidyr::pivot_longer(
@@ -55,6 +55,8 @@ meta_tbl <-
   ) %>%
   flextable::flextable() %>% 
   flextable::autofit()
+
+meta_tbl
 ```
 
 ```{r map}
@@ -62,6 +64,8 @@ p_base_map <-
   ggplot2::ggplot() +
   stars::geom_stars(data = stars::st_as_stars(tif)) +
   ggplot2::coord_sf(expand = FALSE)
+
+meta$data_type <- "binary"
 
 if(meta$data_type == "binary") {
   p_map <- 
@@ -98,18 +102,8 @@ if(meta$data_type == "qualitative") {
 ```
 
 
-```{r table}
-p_table <- 
-  ggplot2::ggplot() +
-  ggplot2::annotation_custom(
-    grob = grid::rasterGrob(meta_tbl %>% flextable::as_raster()), 
-    xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf
-  ) 
-```
-
-
 ```{r plot, layout='l-screen'}
-p_map + p_table + plot_annotation(title = meta$folder_name)
+p_map
 ```
 
 ***
