@@ -21,7 +21,7 @@ data_table <- base::do.call(base::rbind, lapply(list.files(here::here(), pattern
   dplyr::mutate(what = unlist(stringi::stri_split(path, regex = "_"))[1],
     origin = unlist(stringi::stri_split(path, regex = "_"))[2],
                 year = unlist(stringi::stri_split(path, regex = "_"))[3]) %>% 
-  dplyr::mutate(distill = paste0("* [", gsub("-", " ", what), " (", year, ")](/d6geodatabase/reports/",
+  dplyr::mutate(distill = paste0("* [", gsub("-", " ", what), " (", year, ")](/d6geodatabase/",
                gsub(pattern = ".rmd", replacement = ".html", x = path), ")"))
   }))
 
