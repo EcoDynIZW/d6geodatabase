@@ -34,7 +34,7 @@ ggplot2::theme_update(
 
 
 ```{r data-impor}
-path <- paste(stringi::stri_c((unlist(stringi::stri_split(here::here(), regex = '/'))[1:3]), collapse = '/'),'PopDynIZW Dropbox/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif', sep = '/')
+path <- paste(d6geodata::get_dropbox_path(),'GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif', sep = '/')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%

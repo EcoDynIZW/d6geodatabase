@@ -23,7 +23,7 @@ sapply(list('tidyverse', 'here', 'ggplot2', 'raster', 'terra', 'cowplot'),
 
 ```{r, include = FALSE}
 path <- 
-"C:/Users/wenzler/PopDynIZW Dropbox/GeoData/data-proc/germany/Roads-germany_2022_100m_03035_tif"
+"D:/PopDynIZW Dropbox/GeoData/data-proc/motorways_berlin_2022_100m_03035_tif"
 
 
 meta_raw <- utils::read.csv2(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE))
@@ -49,7 +49,7 @@ grid::rasterGrob(meta_tab %>% flextable::as_raster()), xmin=-Inf, xmax=Inf, ymin
 
 title <- ggdraw() +
   draw_label(
-    meta_tab$folder_name,
+    meta_raw$folder_name,
     fontface = 'bold',
     x = 0,
     hjust = 0
