@@ -11,7 +11,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
-dev = 'ragg_png', fig.width = 9, fig.height = 6, dpi = 250, retina = 1)
+dev = 'ragg_png', dpi = 50, retina = 1)
 
 Sys.setlocale('LC_TIME', 'C')
 
@@ -41,7 +41,8 @@ meta <-
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
 
 tif <-
-  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
+  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE)) %>% 
+  terra::aggregate(fact = 20, fun = "mean")
 
 
 ```
@@ -91,7 +92,7 @@ p_table <-
 ```
 
 ```{r plot, layout='l-screen'}
-p_map + p_table + plot_annotation(title = meta$folder_name)
+p_map + p_table
 ```
 
 
