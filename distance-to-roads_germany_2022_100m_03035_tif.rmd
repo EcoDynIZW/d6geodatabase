@@ -92,7 +92,7 @@ p_table <-
   )
 ```
 
-```{r plot, layout='l-screen'}
+```{r plot, layout='l-screen', dpi=96}
 p_map + p_table + plot_annotation(title = meta$folder_name)
 ```
 
