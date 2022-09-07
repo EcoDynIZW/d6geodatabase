@@ -38,7 +38,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste(dir(path = c('C:/', 'D:/', 'E:/'), pattern = 'PopDynIZW Dropbox$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif', sep = '/')
+    paste(dir(path = c('C:/', 'D:/', 'E:/'), pattern = 'PopDynIZW Dropbox$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/atlas_alt/landuse_atlas_2009_1m_03035_tif', sep = '/')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -47,9 +47,9 @@ meta <-
 tif <-
   terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 
-if(raster::ncell(tif)>= 1e+6){
+while(raster::ncell(tif)>= 1e+7){
   tif <- tif %>%
-  terra::aggregate(fact = 10,
+  terra::aggregate(fact = plyr::round_any(raster::ncell(tif)/1e+6, 10, ceiling),
                    fun = base::ifelse(meta$type_of_data %in% c('binary_categorical',
                                                        'unordered_categorical',
                                                        'ordered_categorical'),
@@ -91,7 +91,6 @@ if(meta$type_of_data %in% c('continual_numeric', 'discrete_numeric')) {
 if(meta$type_of_data %in% c('unordered_categorical', 'ordered_categorical')) {
   p_map <- d6geodata::plot_qualitative_map(tif = tif, p_base_map = p_base_map)
 }
-
 ```
 
 ```{r table}
