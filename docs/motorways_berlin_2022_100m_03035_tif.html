@@ -789,6 +789,7 @@ code span.wa { color: #bf0303; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1861,15 +1862,21 @@ code span.wa { color: #bf0303; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2584,7 +2591,7 @@ code span.wa { color: #bf0303; } /* Warning */
 Session Info
 </summary>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>[1] &quot;2022-09-07 10:52:13 CEST&quot;</code></pre>
+<pre><code>[1] &quot;2022-09-19 13:34:39 CEST&quot;</code></pre>
 <pre><code>R version 4.1.3 (2022-03-10)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 17763)
@@ -2592,58 +2599,60 @@ Running under: Windows 10 x64 (build 17763)
 Matrix products: default
 
 locale:
-[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
-[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
-[5] LC_TIME=C                      
+[1] LC_COLLATE=English_United States.1252 
+[2] LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=C                             
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods  
 [7] base     
 
 other attached packages:
- [1] forcats_0.5.2   stringr_1.4.1   dplyr_1.0.9     purrr_0.3.4    
- [5] readr_2.1.2     tidyr_1.2.0     tibble_3.1.6    ggplot2_3.3.6  
+ [1] forcats_0.5.2   stringr_1.4.1   dplyr_1.0.10    purrr_0.3.4    
+ [5] readr_2.1.2     tidyr_1.2.1     tibble_3.1.8    ggplot2_3.3.6  
  [9] tidyverse_1.3.2 patchwork_1.1.2
 
 loaded via a namespace (and not attached):
-  [1] fs_1.5.2             sf_1.0-8             lubridate_1.8.0     
-  [4] httr_1.4.4           webshot_0.5.3        rprojroot_2.0.3     
-  [7] d6geodata_0.0.0.9000 tools_4.1.3          backports_1.4.1     
- [10] bslib_0.4.0          utf8_1.2.2           R6_2.5.1            
- [13] KernSmooth_2.23-20   DBI_1.1.3            colorspace_2.0-3    
- [16] withr_2.5.0          tidyselect_1.1.2     processx_3.7.0      
- [19] downlit_0.4.2        compiler_4.1.3       rvest_1.0.3         
- [22] textshaping_0.3.6    cli_3.3.0            flextable_0.7.3     
- [25] xml2_1.3.3           officer_0.4.3        labeling_0.4.2      
- [28] bookdown_0.28        sass_0.4.2           scales_1.2.1        
- [31] classInt_0.4-3       callr_3.7.2          proxy_0.4-26        
- [34] systemfonts_1.0.4    digest_0.6.29        rmarkdown_2.16      
- [37] base64enc_0.1-3      pkgconfig_2.0.3      htmltools_0.5.2     
- [40] dbplyr_2.2.1         fastmap_1.1.0        highr_0.9           
- [43] readxl_1.4.1         rlang_1.0.4          rstudioapi_0.14     
- [46] jquerylib_0.1.4      farver_2.1.1         generics_0.1.3      
- [49] jsonlite_1.8.0       googlesheets4_1.0.1  zip_2.2.0           
- [52] distill_1.4          magrittr_2.0.3       s2_1.1.0            
- [55] Rcpp_1.0.8.3         munsell_0.5.0        fansi_1.0.3         
- [58] abind_1.4-5          gdtools_0.2.4        lifecycle_1.0.1     
- [61] terra_1.6-7          stringi_1.7.6        yaml_2.3.5          
- [64] grid_4.1.3           parallel_4.1.3       crayon_1.5.1        
- [67] haven_2.5.1          stars_0.5-6          hms_1.1.2           
- [70] magick_2.7.3         knitr_1.40           ps_1.7.1            
- [73] pillar_1.8.1         uuid_1.1-0           codetools_0.2-18    
- [76] reprex_2.0.2         wk_0.6.0             glue_1.6.2          
- [79] evaluate_0.16        rcartocolor_2.0.0    modelr_0.1.9        
- [82] data.table_1.14.2    tzdb_0.3.0           vctrs_0.4.1         
- [85] cellranger_1.1.0     gtable_0.3.0         assertthat_0.2.1    
- [88] cachem_1.0.6         xfun_0.30            mime_0.12           
- [91] lwgeom_0.2-8         broom_1.0.1          e1071_1.7-9         
- [94] ragg_1.2.2           class_7.3-20         googledrive_2.0.0   
- [97] gargle_1.2.0         memoise_2.0.1        units_0.8-0         
-[100] ellipsis_0.3.2       here_1.0.1          </code></pre>
+  [1] googledrive_2.0.0    colorspace_2.0-3     ellipsis_0.3.2      
+  [4] class_7.3-20         rprojroot_2.0.3      flextable_0.8.0     
+  [7] base64enc_0.1-3      fs_1.5.2             rstudioapi_0.14     
+ [10] proxy_0.4-27         farver_2.1.1         fansi_1.0.3         
+ [13] d6geodata_0.0.0.9000 lubridate_1.8.0      rcartocolor_2.0.0   
+ [16] xml2_1.3.3           codetools_0.2-18     downlit_0.4.2       
+ [19] cachem_1.0.6         knitr_1.40           jsonlite_1.8.0      
+ [22] broom_1.0.1          dbplyr_2.2.1         compiler_4.1.3      
+ [25] httr_1.4.4           backports_1.4.1      assertthat_0.2.1    
+ [28] fastmap_1.1.0        gargle_1.2.1         cli_3.4.0           
+ [31] s2_1.1.0             htmltools_0.5.3      tools_4.1.3         
+ [34] gtable_0.3.1         glue_1.6.2           wk_0.6.0            
+ [37] Rcpp_1.0.9           cellranger_1.1.0     jquerylib_0.1.4     
+ [40] raster_3.5-29        vctrs_0.4.1          lwgeom_0.2-8        
+ [43] xfun_0.32            ps_1.7.1             rvest_1.0.3         
+ [46] mime_0.12            lifecycle_1.0.2      googlesheets4_1.0.1 
+ [49] terra_1.6-7          scales_1.2.1         ragg_1.2.2          
+ [52] hms_1.1.2            parallel_4.1.3       yaml_2.3.5          
+ [55] memoise_2.0.1        gdtools_0.2.4        sass_0.4.2          
+ [58] distill_1.5          stringi_1.7.6        highr_0.9           
+ [61] e1071_1.7-11         zip_2.2.1            rlang_1.0.5         
+ [64] pkgconfig_2.0.3      systemfonts_1.0.4    evaluate_0.16       
+ [67] lattice_0.20-45      sf_1.0-8             labeling_0.4.2      
+ [70] processx_3.7.0       tidyselect_1.1.2     here_1.0.1          
+ [73] plyr_1.8.7           magrittr_2.0.3       bookdown_0.29       
+ [76] R6_2.5.1             magick_2.7.3         generics_0.1.3      
+ [79] DBI_1.1.3            pillar_1.8.1         haven_2.5.1         
+ [82] withr_2.5.0          units_0.8-0          stars_0.5-6         
+ [85] abind_1.4-5          sp_1.5-0             crayon_1.5.1        
+ [88] modelr_0.1.9         uuid_1.1-0           KernSmooth_2.23-20  
+ [91] utf8_1.2.2           tzdb_0.3.0           rmarkdown_2.16      
+ [94] officer_0.4.4        grid_4.1.3           readxl_1.4.1        
+ [97] data.table_1.14.2    callr_3.7.2          reprex_2.0.2        
+[100] digest_0.6.29        classInt_0.4-7       webshot_0.5.3       
+[103] textshaping_0.3.6    munsell_0.5.0        bslib_0.4.0         </code></pre>
 </div>
 </details>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -38,7 +38,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste(dir(path = c('C:/', 'D:/', 'E:/'), pattern = 'PopDynIZW Dropbox$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/atlas_alt/landuse_atlas_2009_1m_03035_tif', sep = '/')
+    paste(dir(path = c('C:/', 'D:/', 'E:/'), pattern = 'PopDynIZW Dropbox$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif', sep = '/')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -46,6 +46,7 @@ meta <-
 
 tif <-
   terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
+
 
 while(raster::ncell(tif)>= 1e+7){
   tif <- tif %>%
