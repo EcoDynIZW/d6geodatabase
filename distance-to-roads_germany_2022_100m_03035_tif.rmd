@@ -39,14 +39,14 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    'E:/PopDynCloud/GeoData/data-proc/berlin/motorways_berlin_2022_100m_03035_tif'
+    'E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif'
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
 
-tif <-
-  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
+# tif <-
+#   terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 
 # if(raster::ncell(tif)>= 1e+6){
 #   tif <- tif %>%
@@ -67,16 +67,10 @@ tif <-
 #   stars::geom_stars(data = stars::st_as_stars(tif)) +
 #   ggplot2::coord_sf(expand = FALSE)
 # 
-# base_plot <- p_base_map + ggplot2::scale_fill_gradient(
-#   low = "#f1effc",
-#   high = "#221462",
-#   breaks = as.vector(terra::minmax(tif)),
-#   name = NULL,
-#   na.value = "grey90"
-# ) + ggplot2::guides(fill = ggplot2::guide_legend(label.position = "bottom"))
+# base_plot <- d6geodata::plot_quantitative_map(tif = tif, p_base_map = p_base_map)
+# #
+# # saveRDS(base_plot, here::here("img", paste0(unlist(stringi::stri_split(path, regex = "/"))[length(unlist(stringi::stri_split(path, regex = "/")))], ".rds")))
 # 
-# saveRDS(base_plot, here::here("img", paste0(unlist(stringi::stri_split(path, regex = "/"))[length(unlist(stringi::stri_split(path, regex = "/")))], ".rds")))
-
 #   ggplot2::ggsave(device = "png", path = here::here("img"),
 #                   filename =  paste0(unlist(stringi::stri_split(path, regex = "/"))[length(unlist(stringi::stri_split(path, regex = "/")))], ".png"))
 ```
@@ -107,8 +101,6 @@ p_map <- readRDS(paste(path, paste0(unlist(stringi::stri_split(path, regex = "/"
 #     xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf
 #   )
 ```
-
-
 
 ```{r, layout='l-screen'}
 p_map + plot_annotation(title = gsub("_", " " ,meta$folder_name))
