@@ -7,44 +7,16 @@ site: distill::distill_website
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+htmltools::includeHTML("motorways_berlin_2022_100m_03035_tif.html")
+htmltools::includeHTML("distance-to-roads_germany_2022_100m_03035_tif.html")
 ```
 
-<details><summary>Worldwide</summary>
 
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-    
-</details>
+"<details><summary>germany</summary>* [distance to roads (2022)](/d6geodatabase/distance-to-roads_germany_2022_100m_03035_tif.html)</details>"
 
 
-<details><summary><b>Europe</b></summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-
-</details>
-
-
-<details><summary><b>Germany</b></summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-
-</details>
-
-
-<details><summary><b>Berlin & Brandenburg</b></summary>
-
-* [motorways (2022)](/d6geodatabase/reports/motorways_germany_2022_03035_osm_tif.html)
-* another data source
-* yet another data source
-
-</details>
-
-
+"<details><summary>berlin</summary>* [motorways (2022)](/d6geodatabase/motorways_berlin_2022_100m_03035_tif.html)</details>"
 
 
 ## Contact {.appendix}
