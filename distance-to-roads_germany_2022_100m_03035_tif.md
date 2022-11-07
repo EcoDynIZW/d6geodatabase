@@ -9,7 +9,7 @@ output:
         keep_md: TRUE
 ---
 
-
+[main page](index.html)&ensp;
 
 
 
@@ -52,12 +52,12 @@ output:
 <div class="layout-chunk" data-layout="l-screen">
 ![](distance-to-roads_germany_2022_100m_03035_tif_files/figure-html5/unnamed-chunk-2-1.png)<!-- -->
 ```{=html}
-<div id="ukueyhwyte" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="mkcllftlce" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ukueyhwyte .gt_table {
+#mkcllftlce .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -82,7 +82,7 @@ output:
   border-left-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_heading {
+#mkcllftlce .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -94,7 +94,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_title {
+#mkcllftlce .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -106,7 +106,7 @@ output:
   border-bottom-width: 0;
 }
 
-#ukueyhwyte .gt_subtitle {
+#mkcllftlce .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -118,13 +118,13 @@ output:
   border-top-width: 0;
 }
 
-#ukueyhwyte .gt_bottom_border {
+#mkcllftlce .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_col_headings {
+#mkcllftlce .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -139,7 +139,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_col_heading {
+#mkcllftlce .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -159,7 +159,7 @@ output:
   overflow-x: hidden;
 }
 
-#ukueyhwyte .gt_column_spanner_outer {
+#mkcllftlce .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -171,15 +171,15 @@ output:
   padding-right: 4px;
 }
 
-#ukueyhwyte .gt_column_spanner_outer:first-child {
+#mkcllftlce .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ukueyhwyte .gt_column_spanner_outer:last-child {
+#mkcllftlce .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ukueyhwyte .gt_column_spanner {
+#mkcllftlce .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -191,7 +191,7 @@ output:
   width: 100%;
 }
 
-#ukueyhwyte .gt_group_heading {
+#mkcllftlce .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -216,7 +216,7 @@ output:
   vertical-align: middle;
 }
 
-#ukueyhwyte .gt_empty_group_heading {
+#mkcllftlce .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -231,15 +231,15 @@ output:
   vertical-align: middle;
 }
 
-#ukueyhwyte .gt_from_md > :first-child {
+#mkcllftlce .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ukueyhwyte .gt_from_md > :last-child {
+#mkcllftlce .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ukueyhwyte .gt_row {
+#mkcllftlce .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -258,7 +258,7 @@ output:
   overflow-x: hidden;
 }
 
-#ukueyhwyte .gt_stub {
+#mkcllftlce .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -271,7 +271,7 @@ output:
   padding-right: 5px;
 }
 
-#ukueyhwyte .gt_stub_row_group {
+#mkcllftlce .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -285,11 +285,11 @@ output:
   vertical-align: top;
 }
 
-#ukueyhwyte .gt_row_group_first td {
+#mkcllftlce .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ukueyhwyte .gt_summary_row {
+#mkcllftlce .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -299,16 +299,16 @@ output:
   padding-right: 5px;
 }
 
-#ukueyhwyte .gt_first_summary_row {
+#mkcllftlce .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_first_summary_row.thick {
+#mkcllftlce .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ukueyhwyte .gt_last_summary_row {
+#mkcllftlce .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -318,7 +318,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_grand_summary_row {
+#mkcllftlce .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -328,7 +328,7 @@ output:
   padding-right: 5px;
 }
 
-#ukueyhwyte .gt_first_grand_summary_row {
+#mkcllftlce .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -338,11 +338,11 @@ output:
   border-top-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_striped {
+#mkcllftlce .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ukueyhwyte .gt_table_body {
+#mkcllftlce .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -351,7 +351,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_footnotes {
+#mkcllftlce .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -365,7 +365,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_footnote {
+#mkcllftlce .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -374,7 +374,7 @@ output:
   padding-right: 5px;
 }
 
-#ukueyhwyte .gt_sourcenotes {
+#mkcllftlce .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -388,7 +388,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#ukueyhwyte .gt_sourcenote {
+#mkcllftlce .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -396,64 +396,64 @@ output:
   padding-right: 5px;
 }
 
-#ukueyhwyte .gt_left {
+#mkcllftlce .gt_left {
   text-align: left;
 }
 
-#ukueyhwyte .gt_center {
+#mkcllftlce .gt_center {
   text-align: center;
 }
 
-#ukueyhwyte .gt_right {
+#mkcllftlce .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ukueyhwyte .gt_font_normal {
+#mkcllftlce .gt_font_normal {
   font-weight: normal;
 }
 
-#ukueyhwyte .gt_font_bold {
+#mkcllftlce .gt_font_bold {
   font-weight: bold;
 }
 
-#ukueyhwyte .gt_font_italic {
+#mkcllftlce .gt_font_italic {
   font-style: italic;
 }
 
-#ukueyhwyte .gt_super {
+#mkcllftlce .gt_super {
   font-size: 65%;
 }
 
-#ukueyhwyte .gt_footnote_marks {
+#mkcllftlce .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#ukueyhwyte .gt_asterisk {
+#mkcllftlce .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ukueyhwyte .gt_indent_1 {
+#mkcllftlce .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ukueyhwyte .gt_indent_2 {
+#mkcllftlce .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ukueyhwyte .gt_indent_3 {
+#mkcllftlce .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ukueyhwyte .gt_indent_4 {
+#mkcllftlce .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ukueyhwyte .gt_indent_5 {
+#mkcllftlce .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -510,7 +510,7 @@ output:
 <div class="layout-chunk" data-layout="l-body">
 
 ```
-[1] "2022-11-07 16:11:10 CET"
+[1] "2022-11-07 16:24:48 CET"
 ```
 
 ```
