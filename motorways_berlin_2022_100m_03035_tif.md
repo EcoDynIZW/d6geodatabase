@@ -1,5 +1,5 @@
 ---
-title: "&nbsp;"
+title: 'motorways berlin 2022'
 output:
     distill::distill_article:
         highlight: kate      ## styling of code
@@ -9,23 +9,8 @@ output:
         keep_md: TRUE
 ---
 
-[main page](index.html)&ensp;
 
 
-
-
-
-<div class="layout-chunk" data-layout="l-body">
-
-
-</div>
-
-
-
-<div class="layout-chunk" data-layout="l-body">
-
-
-</div>
 
 
 
@@ -42,24 +27,21 @@ output:
 </div>
 
 
-
 <div class="layout-chunk" data-layout="l-body">
 
 
 </div>
-
-
 
 
 <div class="layout-chunk" data-layout="l-screen">
-![](motorways_berlin_2022_100m_03035_tif_files/figure-html5/unnamed-chunk-2-1.png)<!-- -->
+![](motorways_berlin_2022_100m_03035_tif_files/figure-html5/plot-1.png)<!-- -->
 ```{=html}
-<div id="mpitjbitdc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="esnmzmndty" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#mpitjbitdc .gt_table {
+#esnmzmndty .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -84,7 +66,7 @@ output:
   border-left-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_heading {
+#esnmzmndty .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -96,7 +78,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_title {
+#esnmzmndty .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -108,7 +90,7 @@ output:
   border-bottom-width: 0;
 }
 
-#mpitjbitdc .gt_subtitle {
+#esnmzmndty .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -120,13 +102,13 @@ output:
   border-top-width: 0;
 }
 
-#mpitjbitdc .gt_bottom_border {
+#esnmzmndty .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_col_headings {
+#esnmzmndty .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -141,7 +123,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_col_heading {
+#esnmzmndty .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -161,7 +143,7 @@ output:
   overflow-x: hidden;
 }
 
-#mpitjbitdc .gt_column_spanner_outer {
+#esnmzmndty .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -173,15 +155,15 @@ output:
   padding-right: 4px;
 }
 
-#mpitjbitdc .gt_column_spanner_outer:first-child {
+#esnmzmndty .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mpitjbitdc .gt_column_spanner_outer:last-child {
+#esnmzmndty .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mpitjbitdc .gt_column_spanner {
+#esnmzmndty .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -193,7 +175,7 @@ output:
   width: 100%;
 }
 
-#mpitjbitdc .gt_group_heading {
+#esnmzmndty .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -218,7 +200,7 @@ output:
   vertical-align: middle;
 }
 
-#mpitjbitdc .gt_empty_group_heading {
+#esnmzmndty .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -233,15 +215,15 @@ output:
   vertical-align: middle;
 }
 
-#mpitjbitdc .gt_from_md > :first-child {
+#esnmzmndty .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mpitjbitdc .gt_from_md > :last-child {
+#esnmzmndty .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mpitjbitdc .gt_row {
+#esnmzmndty .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -260,7 +242,7 @@ output:
   overflow-x: hidden;
 }
 
-#mpitjbitdc .gt_stub {
+#esnmzmndty .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -273,7 +255,7 @@ output:
   padding-right: 5px;
 }
 
-#mpitjbitdc .gt_stub_row_group {
+#esnmzmndty .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -287,11 +269,11 @@ output:
   vertical-align: top;
 }
 
-#mpitjbitdc .gt_row_group_first td {
+#esnmzmndty .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mpitjbitdc .gt_summary_row {
+#esnmzmndty .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -301,16 +283,16 @@ output:
   padding-right: 5px;
 }
 
-#mpitjbitdc .gt_first_summary_row {
+#esnmzmndty .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_first_summary_row.thick {
+#esnmzmndty .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mpitjbitdc .gt_last_summary_row {
+#esnmzmndty .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -320,7 +302,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_grand_summary_row {
+#esnmzmndty .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -330,7 +312,7 @@ output:
   padding-right: 5px;
 }
 
-#mpitjbitdc .gt_first_grand_summary_row {
+#esnmzmndty .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -340,11 +322,11 @@ output:
   border-top-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_striped {
+#esnmzmndty .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mpitjbitdc .gt_table_body {
+#esnmzmndty .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -353,7 +335,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_footnotes {
+#esnmzmndty .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -367,7 +349,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_footnote {
+#esnmzmndty .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -376,7 +358,7 @@ output:
   padding-right: 5px;
 }
 
-#mpitjbitdc .gt_sourcenotes {
+#esnmzmndty .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -390,7 +372,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#mpitjbitdc .gt_sourcenote {
+#esnmzmndty .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -398,64 +380,64 @@ output:
   padding-right: 5px;
 }
 
-#mpitjbitdc .gt_left {
+#esnmzmndty .gt_left {
   text-align: left;
 }
 
-#mpitjbitdc .gt_center {
+#esnmzmndty .gt_center {
   text-align: center;
 }
 
-#mpitjbitdc .gt_right {
+#esnmzmndty .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mpitjbitdc .gt_font_normal {
+#esnmzmndty .gt_font_normal {
   font-weight: normal;
 }
 
-#mpitjbitdc .gt_font_bold {
+#esnmzmndty .gt_font_bold {
   font-weight: bold;
 }
 
-#mpitjbitdc .gt_font_italic {
+#esnmzmndty .gt_font_italic {
   font-style: italic;
 }
 
-#mpitjbitdc .gt_super {
+#esnmzmndty .gt_super {
   font-size: 65%;
 }
 
-#mpitjbitdc .gt_footnote_marks {
+#esnmzmndty .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#mpitjbitdc .gt_asterisk {
+#esnmzmndty .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mpitjbitdc .gt_indent_1 {
+#esnmzmndty .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mpitjbitdc .gt_indent_2 {
+#esnmzmndty .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mpitjbitdc .gt_indent_3 {
+#esnmzmndty .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mpitjbitdc .gt_indent_4 {
+#esnmzmndty .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mpitjbitdc .gt_indent_5 {
+#esnmzmndty .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -512,7 +494,7 @@ output:
 <div class="layout-chunk" data-layout="l-body">
 
 ```
-[1] "2022-11-07 16:24:56 CET"
+[1] "2022-11-08 12:11:24 CET"
 ```
 
 ```
@@ -554,7 +536,7 @@ loaded via a namespace (and not attached):
 [43] jsonlite_1.8.0      distill_1.5         googlesheets4_1.0.1
 [46] magrittr_2.0.3      s2_1.1.0            Rcpp_1.0.9         
 [49] munsell_0.5.0       fansi_1.0.3         abind_1.4-5        
-[52] terra_1.6-7         lifecycle_1.0.2     stringi_1.7.6      
+[52] lifecycle_1.0.2     terra_1.6-7         stringi_1.7.6      
 [55] yaml_2.3.5          grid_4.1.3          parallel_4.1.3     
 [58] crayon_1.5.1        stars_0.5-6         haven_2.5.1        
 [61] hms_1.1.2           knitr_1.40          pillar_1.8.1       

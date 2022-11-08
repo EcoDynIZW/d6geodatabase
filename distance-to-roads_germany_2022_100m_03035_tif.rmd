@@ -1,5 +1,5 @@
 ---
-title: "&nbsp;"
+title: 'distance-to-roads germany 2022'
 output:
     distill::distill_article:
         highlight: kate      ## styling of code
@@ -9,7 +9,7 @@ output:
         keep_md: TRUE
 ---
 
-[main page](index.html)&ensp;
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
@@ -17,8 +17,6 @@ dev = 'ragg_png', fig.width = 9, fig.height = 6, dpi = 250, retina = 1)
 
 Sys.setlocale('LC_TIME', 'C')
 
-#sapply(list('tidyverse', 'ggplot2', 'raster', 'terra'),
-#       library, character.only = TRUE, logical.return = TRUE)
 library(patchwork)
 
 `%>%` <- magrittr::`%>%`
@@ -39,46 +37,17 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    'E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif'
+    paste(dir(path = c('C:/', 'E:/'), pattern = 'PopDynCloud$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif', sep = '/')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
   dplyr::mutate(dplyr::across(dplyr::everything(), as.character))
 
-# tif <-
-#   terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
-
-# if(raster::ncell(tif)>= 1e+6){
-#   tif <- tif %>%
-#   terra::aggregate(fact = 10,
-#                    fun = base::ifelse(meta$type_of_data %in% c('binary_categorical',
-#                                                        'unordered_categorical',
-#                                                        'ordered_categorical'),
-#                                 'max',
-#                                 'mean'))
-# }
-
+tif <-
+  terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
 ```
-
-
-```{r}
-# p_base_map <-
-#   ggplot2::ggplot() +
-#   stars::geom_stars(data = stars::st_as_stars(tif)) +
-#   ggplot2::coord_sf(expand = FALSE)
-# 
-# base_plot <- d6geodata::plot_quantitative_map(tif = tif, p_base_map = p_base_map)
-# #
-# # saveRDS(base_plot, here::here("img", paste0(unlist(stringi::stri_split(path, regex = "/"))[length(unlist(stringi::stri_split(path, regex = "/")))], ".rds")))
-# 
-#   ggplot2::ggsave(device = "png", path = here::here("img"),
-#                   filename =  paste0(unlist(stringi::stri_split(path, regex = "/"))[length(unlist(stringi::stri_split(path, regex = "/")))], ".png"))
-```
-
-
 
 ```{r data-table}
-
 meta_gt <- gt::gt(meta %>%
   tidyr::pivot_longer(
     cols = dplyr::everything(),
@@ -88,22 +57,13 @@ meta_gt <- gt::gt(meta %>%
 ```
 
 ```{r map}
-p_map <- readRDS(paste(path, paste0(unlist(stringi::stri_split(path, regex = "/"))[length(unlist(stringi::stri_split(path, regex = "/")))], ".rds"), sep = "/"))
+p_map <-
+ readRDS('E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif.rds')
 
 ```
 
-
-```{r table}
-# p_table <-
-#   ggplot2::ggplot() +
-#   ggplot2::annotation_custom(
-#     grob = grid::rasterGrob(meta_tbl %>% flextable::as_raster()),
-#     xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf
-#   )
-```
-
-```{r, layout='l-screen'}
-p_map + plot_annotation(title = gsub("_", " " ,meta$folder_name))
+```{r plot, layout='l-screen'}
+p_map
 meta_gt
 ```
 
