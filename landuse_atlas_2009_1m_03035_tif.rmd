@@ -1,5 +1,5 @@
 ---
-title: 'distance-to-roads germany 2022'
+title: 'landuse atlas 2009'
 output:
     distill::distill_article:
         highlight: kate      ## styling of code
@@ -37,7 +37,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste(dir(path = c('C:/', 'E:/'), pattern = 'PopDynCloud$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif', sep = '/')
+    paste(dir(path = c('C:/', 'E:/'), pattern = 'PopDynCloud$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif', sep = '/')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -58,7 +58,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS('E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif.rds')
+ readRDS('E:/PopDynCloud/GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif.rds')
 
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: 'distance-to-roads germany 2022'
+title: 'landuse atlas 2009'
 output:
     distill::distill_article:
         highlight: kate      ## styling of code
@@ -33,17 +33,15 @@ output:
 </div>
 
 
-![](E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif.png){width=30%}
-
 <div class="layout-chunk" data-layout="l-screen">
-
+![](landuse_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png)<!-- -->
 ```{=html}
-<div id="dykrdvtdxg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="pkmtwamyhe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#dykrdvtdxg .gt_table {
+#pkmtwamyhe .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -68,7 +66,7 @@ output:
   border-left-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_heading {
+#pkmtwamyhe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -80,7 +78,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_title {
+#pkmtwamyhe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -92,7 +90,7 @@ output:
   border-bottom-width: 0;
 }
 
-#dykrdvtdxg .gt_subtitle {
+#pkmtwamyhe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -104,13 +102,13 @@ output:
   border-top-width: 0;
 }
 
-#dykrdvtdxg .gt_bottom_border {
+#pkmtwamyhe .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_col_headings {
+#pkmtwamyhe .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -125,7 +123,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_col_heading {
+#pkmtwamyhe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -145,7 +143,7 @@ output:
   overflow-x: hidden;
 }
 
-#dykrdvtdxg .gt_column_spanner_outer {
+#pkmtwamyhe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -157,15 +155,15 @@ output:
   padding-right: 4px;
 }
 
-#dykrdvtdxg .gt_column_spanner_outer:first-child {
+#pkmtwamyhe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dykrdvtdxg .gt_column_spanner_outer:last-child {
+#pkmtwamyhe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dykrdvtdxg .gt_column_spanner {
+#pkmtwamyhe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -177,7 +175,7 @@ output:
   width: 100%;
 }
 
-#dykrdvtdxg .gt_group_heading {
+#pkmtwamyhe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -202,7 +200,7 @@ output:
   vertical-align: middle;
 }
 
-#dykrdvtdxg .gt_empty_group_heading {
+#pkmtwamyhe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -217,15 +215,15 @@ output:
   vertical-align: middle;
 }
 
-#dykrdvtdxg .gt_from_md > :first-child {
+#pkmtwamyhe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dykrdvtdxg .gt_from_md > :last-child {
+#pkmtwamyhe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dykrdvtdxg .gt_row {
+#pkmtwamyhe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -244,7 +242,7 @@ output:
   overflow-x: hidden;
 }
 
-#dykrdvtdxg .gt_stub {
+#pkmtwamyhe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -257,7 +255,7 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_stub_row_group {
+#pkmtwamyhe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -271,11 +269,11 @@ output:
   vertical-align: top;
 }
 
-#dykrdvtdxg .gt_row_group_first td {
+#pkmtwamyhe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dykrdvtdxg .gt_summary_row {
+#pkmtwamyhe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -285,16 +283,16 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_first_summary_row {
+#pkmtwamyhe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_first_summary_row.thick {
+#pkmtwamyhe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dykrdvtdxg .gt_last_summary_row {
+#pkmtwamyhe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -304,7 +302,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_grand_summary_row {
+#pkmtwamyhe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -314,7 +312,7 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_first_grand_summary_row {
+#pkmtwamyhe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -324,11 +322,11 @@ output:
   border-top-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_striped {
+#pkmtwamyhe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dykrdvtdxg .gt_table_body {
+#pkmtwamyhe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +335,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_footnotes {
+#pkmtwamyhe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -351,7 +349,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_footnote {
+#pkmtwamyhe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -360,7 +358,7 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_sourcenotes {
+#pkmtwamyhe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -374,7 +372,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_sourcenote {
+#pkmtwamyhe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -382,64 +380,64 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_left {
+#pkmtwamyhe .gt_left {
   text-align: left;
 }
 
-#dykrdvtdxg .gt_center {
+#pkmtwamyhe .gt_center {
   text-align: center;
 }
 
-#dykrdvtdxg .gt_right {
+#pkmtwamyhe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dykrdvtdxg .gt_font_normal {
+#pkmtwamyhe .gt_font_normal {
   font-weight: normal;
 }
 
-#dykrdvtdxg .gt_font_bold {
+#pkmtwamyhe .gt_font_bold {
   font-weight: bold;
 }
 
-#dykrdvtdxg .gt_font_italic {
+#pkmtwamyhe .gt_font_italic {
   font-style: italic;
 }
 
-#dykrdvtdxg .gt_super {
+#pkmtwamyhe .gt_super {
   font-size: 65%;
 }
 
-#dykrdvtdxg .gt_footnote_marks {
+#pkmtwamyhe .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#dykrdvtdxg .gt_asterisk {
+#pkmtwamyhe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dykrdvtdxg .gt_indent_1 {
+#pkmtwamyhe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dykrdvtdxg .gt_indent_2 {
+#pkmtwamyhe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dykrdvtdxg .gt_indent_3 {
+#pkmtwamyhe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dykrdvtdxg .gt_indent_4 {
+#pkmtwamyhe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dykrdvtdxg .gt_indent_5 {
+#pkmtwamyhe .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -453,31 +451,31 @@ output:
   </thead>
   <tbody class="gt_table_body">
     <tr><td class="gt_row gt_left">folder_name</td>
-<td class="gt_row gt_left">distance-to-roads_germany_2022_100m_03035_tif</td></tr>
+<td class="gt_row gt_left">landuse_atlas_2009_1m_03035_tif</td></tr>
     <tr><td class="gt_row gt_left">name</td>
-<td class="gt_row gt_left">distance-to-roads_germany_2022_100m_03035.tif</td></tr>
+<td class="gt_row gt_left">landuse_atlas_2009_1m_03035.tif</td></tr>
     <tr><td class="gt_row gt_left">crs</td>
 <td class="gt_row gt_left">+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs</td></tr>
     <tr><td class="gt_row gt_left">epsg</td>
 <td class="gt_row gt_left">3035</td></tr>
     <tr><td class="gt_row gt_left">year_of_data</td>
-<td class="gt_row gt_left">2022</td></tr>
+<td class="gt_row gt_left">2009</td></tr>
     <tr><td class="gt_row gt_left">units_of_data</td>
 <td class="gt_row gt_left">m</td></tr>
     <tr><td class="gt_row gt_left">resolution</td>
-<td class="gt_row gt_left">100m</td></tr>
+<td class="gt_row gt_left">1m</td></tr>
     <tr><td class="gt_row gt_left">type_of_data</td>
-<td class="gt_row gt_left">continual_numeric</td></tr>
+<td class="gt_row gt_left">ordered_categorical</td></tr>
     <tr><td class="gt_row gt_left">type_of_file</td>
 <td class="gt_row gt_left">.tif</td></tr>
     <tr><td class="gt_row gt_left">source</td>
-<td class="gt_row gt_left">bkg</td></tr>
+<td class="gt_row gt_left">metaver</td></tr>
     <tr><td class="gt_row gt_left">link_of_source</td>
-<td class="gt_row gt_left">https://gdz.bkg.bund.de</td></tr>
+<td class="gt_row gt_left">NA</td></tr>
     <tr><td class="gt_row gt_left">date_of_compile</td>
-<td class="gt_row gt_left">2022-05-13</td></tr>
+<td class="gt_row gt_left">2022-09-05</td></tr>
     <tr><td class="gt_row gt_left">short_description</td>
-<td class="gt_row gt_left">created from roads_germany_2022_100m_03035</td></tr>
+<td class="gt_row gt_left">created from landuse_brandenburg_2009_polygons_25833_gpkg and landuse_brandenburg_2009_lines_25833_gpkg</td></tr>
     <tr><td class="gt_row gt_left">modified</td>
 <td class="gt_row gt_left">NA</td></tr>
   </tbody>
@@ -496,7 +494,7 @@ output:
 <div class="layout-chunk" data-layout="l-body">
 
 ```
-[1] "2022-11-09 13:35:41 CET"
+[1] "2022-11-09 14:19:09 CET"
 ```
 
 ```
@@ -519,25 +517,30 @@ other attached packages:
 [1] patchwork_1.1.2
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.9        bslib_0.4.1       compiler_4.1.3   
- [4] pillar_1.8.1      jquerylib_0.1.4   tools_4.1.3      
- [7] digest_0.6.29     downlit_0.4.2     jsonlite_1.8.3   
-[10] evaluate_0.18     memoise_2.0.1     lifecycle_1.0.3  
-[13] tibble_3.1.8      gtable_0.3.1      pkgconfig_2.0.3  
-[16] rlang_1.0.6       DBI_1.1.3         cli_3.4.0        
-[19] rstudioapi_0.14   distill_1.5       yaml_2.3.5       
-[22] xfun_0.32         fastmap_1.1.0     terra_1.6-17     
-[25] withr_2.5.0       stringr_1.4.1     dplyr_1.0.10     
-[28] knitr_1.40        systemfonts_1.0.4 generics_0.1.3   
-[31] sass_0.4.2        vctrs_0.4.1       tidyselect_1.2.0 
-[34] grid_4.1.3        glue_1.6.2        R6_2.5.1         
-[37] textshaping_0.3.6 fansi_1.0.3       rmarkdown_2.17   
-[40] purrr_0.3.4       tidyr_1.2.1       ggplot2_3.3.6    
-[43] magrittr_2.0.3    ellipsis_0.3.2    codetools_0.2-18 
-[46] scales_1.2.1      htmltools_0.5.3   gt_0.7.0         
-[49] assertthat_0.2.1  colorspace_2.0-3  ragg_1.2.4       
-[52] utf8_1.2.2        stringi_1.7.6     munsell_0.5.0    
-[55] cachem_1.0.6     
+ [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      
+ [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        
+ [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      
+[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      
+[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   
+[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     
+[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    
+[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 
+[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  
+[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       
+[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          
+[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    
+[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   
+[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       
+[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         
+[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      
+[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        
+[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       
+[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        
+[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    
+[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  
+[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          
+[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        
+[70] sass_0.4.2        
 ```
 
 </div>
