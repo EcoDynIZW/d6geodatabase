@@ -62,9 +62,13 @@ p_map <-
 
 ```
 
+
+
 ```{r plot, layout='l-screen'}
 p_map
 meta_gt
+
+#![](E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif.png)
 ```
 
 
