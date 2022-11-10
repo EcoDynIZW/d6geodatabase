@@ -33,17 +33,15 @@ output:
 </div>
 
 
-![](E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif.png){width=30%}
-
 <div class="layout-chunk" data-layout="l-screen">
-
+![](distance-to-roads_germany_2022_100m_03035_tif_files/figure-html5/plot-1.png)<!-- -->
 ```{=html}
-<div id="dykrdvtdxg" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="saoyqonjba" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#dykrdvtdxg .gt_table {
+#saoyqonjba .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -68,7 +66,7 @@ output:
   border-left-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_heading {
+#saoyqonjba .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -80,7 +78,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_title {
+#saoyqonjba .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -92,7 +90,7 @@ output:
   border-bottom-width: 0;
 }
 
-#dykrdvtdxg .gt_subtitle {
+#saoyqonjba .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -104,13 +102,13 @@ output:
   border-top-width: 0;
 }
 
-#dykrdvtdxg .gt_bottom_border {
+#saoyqonjba .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_col_headings {
+#saoyqonjba .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -125,7 +123,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_col_heading {
+#saoyqonjba .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -145,7 +143,7 @@ output:
   overflow-x: hidden;
 }
 
-#dykrdvtdxg .gt_column_spanner_outer {
+#saoyqonjba .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -157,15 +155,15 @@ output:
   padding-right: 4px;
 }
 
-#dykrdvtdxg .gt_column_spanner_outer:first-child {
+#saoyqonjba .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dykrdvtdxg .gt_column_spanner_outer:last-child {
+#saoyqonjba .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dykrdvtdxg .gt_column_spanner {
+#saoyqonjba .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -177,7 +175,7 @@ output:
   width: 100%;
 }
 
-#dykrdvtdxg .gt_group_heading {
+#saoyqonjba .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -202,7 +200,7 @@ output:
   vertical-align: middle;
 }
 
-#dykrdvtdxg .gt_empty_group_heading {
+#saoyqonjba .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -217,15 +215,15 @@ output:
   vertical-align: middle;
 }
 
-#dykrdvtdxg .gt_from_md > :first-child {
+#saoyqonjba .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dykrdvtdxg .gt_from_md > :last-child {
+#saoyqonjba .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dykrdvtdxg .gt_row {
+#saoyqonjba .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -244,7 +242,7 @@ output:
   overflow-x: hidden;
 }
 
-#dykrdvtdxg .gt_stub {
+#saoyqonjba .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -257,7 +255,7 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_stub_row_group {
+#saoyqonjba .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -271,11 +269,11 @@ output:
   vertical-align: top;
 }
 
-#dykrdvtdxg .gt_row_group_first td {
+#saoyqonjba .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dykrdvtdxg .gt_summary_row {
+#saoyqonjba .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -285,16 +283,16 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_first_summary_row {
+#saoyqonjba .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_first_summary_row.thick {
+#saoyqonjba .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dykrdvtdxg .gt_last_summary_row {
+#saoyqonjba .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -304,7 +302,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_grand_summary_row {
+#saoyqonjba .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -314,7 +312,7 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_first_grand_summary_row {
+#saoyqonjba .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -324,11 +322,11 @@ output:
   border-top-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_striped {
+#saoyqonjba .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dykrdvtdxg .gt_table_body {
+#saoyqonjba .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -337,7 +335,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_footnotes {
+#saoyqonjba .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -351,7 +349,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_footnote {
+#saoyqonjba .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -360,7 +358,7 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_sourcenotes {
+#saoyqonjba .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -374,7 +372,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#dykrdvtdxg .gt_sourcenote {
+#saoyqonjba .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -382,64 +380,64 @@ output:
   padding-right: 5px;
 }
 
-#dykrdvtdxg .gt_left {
+#saoyqonjba .gt_left {
   text-align: left;
 }
 
-#dykrdvtdxg .gt_center {
+#saoyqonjba .gt_center {
   text-align: center;
 }
 
-#dykrdvtdxg .gt_right {
+#saoyqonjba .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dykrdvtdxg .gt_font_normal {
+#saoyqonjba .gt_font_normal {
   font-weight: normal;
 }
 
-#dykrdvtdxg .gt_font_bold {
+#saoyqonjba .gt_font_bold {
   font-weight: bold;
 }
 
-#dykrdvtdxg .gt_font_italic {
+#saoyqonjba .gt_font_italic {
   font-style: italic;
 }
 
-#dykrdvtdxg .gt_super {
+#saoyqonjba .gt_super {
   font-size: 65%;
 }
 
-#dykrdvtdxg .gt_footnote_marks {
+#saoyqonjba .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#dykrdvtdxg .gt_asterisk {
+#saoyqonjba .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dykrdvtdxg .gt_indent_1 {
+#saoyqonjba .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dykrdvtdxg .gt_indent_2 {
+#saoyqonjba .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dykrdvtdxg .gt_indent_3 {
+#saoyqonjba .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dykrdvtdxg .gt_indent_4 {
+#saoyqonjba .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dykrdvtdxg .gt_indent_5 {
+#saoyqonjba .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -496,7 +494,7 @@ output:
 <div class="layout-chunk" data-layout="l-body">
 
 ```
-[1] "2022-11-09 13:35:41 CET"
+[1] "2022-11-10 11:38:05 CET"
 ```
 
 ```
@@ -519,25 +517,31 @@ other attached packages:
 [1] patchwork_1.1.2
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.9        bslib_0.4.1       compiler_4.1.3   
- [4] pillar_1.8.1      jquerylib_0.1.4   tools_4.1.3      
- [7] digest_0.6.29     downlit_0.4.2     jsonlite_1.8.3   
-[10] evaluate_0.18     memoise_2.0.1     lifecycle_1.0.3  
-[13] tibble_3.1.8      gtable_0.3.1      pkgconfig_2.0.3  
-[16] rlang_1.0.6       DBI_1.1.3         cli_3.4.0        
-[19] rstudioapi_0.14   distill_1.5       yaml_2.3.5       
-[22] xfun_0.32         fastmap_1.1.0     terra_1.6-17     
-[25] withr_2.5.0       stringr_1.4.1     dplyr_1.0.10     
-[28] knitr_1.40        systemfonts_1.0.4 generics_0.1.3   
-[31] sass_0.4.2        vctrs_0.4.1       tidyselect_1.2.0 
-[34] grid_4.1.3        glue_1.6.2        R6_2.5.1         
-[37] textshaping_0.3.6 fansi_1.0.3       rmarkdown_2.17   
-[40] purrr_0.3.4       tidyr_1.2.1       ggplot2_3.3.6    
-[43] magrittr_2.0.3    ellipsis_0.3.2    codetools_0.2-18 
-[46] scales_1.2.1      htmltools_0.5.3   gt_0.7.0         
-[49] assertthat_0.2.1  colorspace_2.0-3  ragg_1.2.4       
-[52] utf8_1.2.2        stringi_1.7.6     munsell_0.5.0    
-[55] cachem_1.0.6     
+ [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      
+ [4] assertthat_0.2.1   rprojroot_2.0.3    digest_0.6.29     
+ [7] utf8_1.2.2         mime_0.12          R6_2.5.1          
+[10] evaluate_0.18      e1071_1.7-11       highr_0.9         
+[13] ggplot2_3.3.6      pillar_1.8.1       rlang_1.0.6       
+[16] rstudioapi_0.14    jquerylib_0.1.4    rmarkdown_2.17    
+[19] labeling_0.4.2     textshaping_0.3.6  stringr_1.4.1     
+[22] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    
+[25] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 
+[28] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  
+[31] tibble_3.1.8       bookdown_0.29      codetools_0.2-18  
+[34] fansi_1.0.3        dplyr_1.0.10       withr_2.5.0       
+[37] sf_1.0-8           wk_0.6.0           grid_4.1.3        
+[40] jsonlite_1.8.3     lwgeom_0.2-8       gtable_0.3.1      
+[43] lifecycle_1.0.3    DBI_1.1.3          magrittr_2.0.3    
+[46] units_0.8-0        scales_1.2.1       KernSmooth_2.23-20
+[49] cli_3.4.0          stringi_1.7.6      cachem_1.0.6      
+[52] farver_2.1.1       bslib_0.4.1        ellipsis_0.3.2    
+[55] ragg_1.2.4         generics_0.1.3     vctrs_0.4.1       
+[58] distill_1.5        s2_1.1.0           tools_4.1.3       
+[61] glue_1.6.2         purrr_0.3.4        abind_1.4-5       
+[64] parallel_4.1.3     fastmap_1.1.0      yaml_2.3.5        
+[67] colorspace_2.0-3   terra_1.6-17       stars_0.5-6       
+[70] gt_0.7.0           classInt_0.4-7     memoise_2.0.1     
+[73] knitr_1.40         sass_0.4.2        
 ```
 
 </div>

@@ -36,12 +36,12 @@ output:
 <div class="layout-chunk" data-layout="l-screen">
 ![](landuse_atlas_2009_1m_03035_tif_files/figure-html5/plot-1.png)<!-- -->
 ```{=html}
-<div id="pkmtwamyhe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="voilxeckvs" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pkmtwamyhe .gt_table {
+#voilxeckvs .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -66,7 +66,7 @@ output:
   border-left-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_heading {
+#voilxeckvs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -78,7 +78,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_title {
+#voilxeckvs .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -90,7 +90,7 @@ output:
   border-bottom-width: 0;
 }
 
-#pkmtwamyhe .gt_subtitle {
+#voilxeckvs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -102,13 +102,13 @@ output:
   border-top-width: 0;
 }
 
-#pkmtwamyhe .gt_bottom_border {
+#voilxeckvs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_col_headings {
+#voilxeckvs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -123,7 +123,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_col_heading {
+#voilxeckvs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -143,7 +143,7 @@ output:
   overflow-x: hidden;
 }
 
-#pkmtwamyhe .gt_column_spanner_outer {
+#voilxeckvs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -155,15 +155,15 @@ output:
   padding-right: 4px;
 }
 
-#pkmtwamyhe .gt_column_spanner_outer:first-child {
+#voilxeckvs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pkmtwamyhe .gt_column_spanner_outer:last-child {
+#voilxeckvs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pkmtwamyhe .gt_column_spanner {
+#voilxeckvs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -175,7 +175,7 @@ output:
   width: 100%;
 }
 
-#pkmtwamyhe .gt_group_heading {
+#voilxeckvs .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -200,7 +200,7 @@ output:
   vertical-align: middle;
 }
 
-#pkmtwamyhe .gt_empty_group_heading {
+#voilxeckvs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -215,15 +215,15 @@ output:
   vertical-align: middle;
 }
 
-#pkmtwamyhe .gt_from_md > :first-child {
+#voilxeckvs .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pkmtwamyhe .gt_from_md > :last-child {
+#voilxeckvs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pkmtwamyhe .gt_row {
+#voilxeckvs .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -242,7 +242,7 @@ output:
   overflow-x: hidden;
 }
 
-#pkmtwamyhe .gt_stub {
+#voilxeckvs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -255,7 +255,7 @@ output:
   padding-right: 5px;
 }
 
-#pkmtwamyhe .gt_stub_row_group {
+#voilxeckvs .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -269,11 +269,11 @@ output:
   vertical-align: top;
 }
 
-#pkmtwamyhe .gt_row_group_first td {
+#voilxeckvs .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pkmtwamyhe .gt_summary_row {
+#voilxeckvs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -283,16 +283,16 @@ output:
   padding-right: 5px;
 }
 
-#pkmtwamyhe .gt_first_summary_row {
+#voilxeckvs .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_first_summary_row.thick {
+#voilxeckvs .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pkmtwamyhe .gt_last_summary_row {
+#voilxeckvs .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -302,7 +302,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_grand_summary_row {
+#voilxeckvs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -312,7 +312,7 @@ output:
   padding-right: 5px;
 }
 
-#pkmtwamyhe .gt_first_grand_summary_row {
+#voilxeckvs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -322,11 +322,11 @@ output:
   border-top-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_striped {
+#voilxeckvs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pkmtwamyhe .gt_table_body {
+#voilxeckvs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -335,7 +335,7 @@ output:
   border-bottom-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_footnotes {
+#voilxeckvs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -349,7 +349,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_footnote {
+#voilxeckvs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -358,7 +358,7 @@ output:
   padding-right: 5px;
 }
 
-#pkmtwamyhe .gt_sourcenotes {
+#voilxeckvs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -372,7 +372,7 @@ output:
   border-right-color: #D3D3D3;
 }
 
-#pkmtwamyhe .gt_sourcenote {
+#voilxeckvs .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -380,64 +380,64 @@ output:
   padding-right: 5px;
 }
 
-#pkmtwamyhe .gt_left {
+#voilxeckvs .gt_left {
   text-align: left;
 }
 
-#pkmtwamyhe .gt_center {
+#voilxeckvs .gt_center {
   text-align: center;
 }
 
-#pkmtwamyhe .gt_right {
+#voilxeckvs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pkmtwamyhe .gt_font_normal {
+#voilxeckvs .gt_font_normal {
   font-weight: normal;
 }
 
-#pkmtwamyhe .gt_font_bold {
+#voilxeckvs .gt_font_bold {
   font-weight: bold;
 }
 
-#pkmtwamyhe .gt_font_italic {
+#voilxeckvs .gt_font_italic {
   font-style: italic;
 }
 
-#pkmtwamyhe .gt_super {
+#voilxeckvs .gt_super {
   font-size: 65%;
 }
 
-#pkmtwamyhe .gt_footnote_marks {
+#voilxeckvs .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#pkmtwamyhe .gt_asterisk {
+#voilxeckvs .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pkmtwamyhe .gt_indent_1 {
+#voilxeckvs .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pkmtwamyhe .gt_indent_2 {
+#voilxeckvs .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pkmtwamyhe .gt_indent_3 {
+#voilxeckvs .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pkmtwamyhe .gt_indent_4 {
+#voilxeckvs .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pkmtwamyhe .gt_indent_5 {
+#voilxeckvs .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -494,7 +494,7 @@ output:
 <div class="layout-chunk" data-layout="l-body">
 
 ```
-[1] "2022-11-09 14:19:09 CET"
+[1] "2022-11-10 11:46:06 CET"
 ```
 
 ```
@@ -514,33 +514,41 @@ attached base packages:
 [7] base     
 
 other attached packages:
-[1] patchwork_1.1.2
+ [1] forcats_0.5.2   stringr_1.4.1   dplyr_1.0.10    purrr_0.3.4    
+ [5] readr_2.1.3     tidyr_1.2.1     tibble_3.1.8    ggplot2_3.3.6  
+ [9] tidyverse_1.3.2 patchwork_1.1.2
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.9         tidyr_1.2.1        class_7.3-20      
- [4] assertthat_0.2.1   digest_0.6.29      utf8_1.2.2        
- [7] R6_2.5.1           evaluate_0.18      e1071_1.7-11      
-[10] ggplot2_3.3.6      highr_0.9          pillar_1.8.1      
-[13] rlang_1.0.6        rstudioapi_0.14    jquerylib_0.1.4   
-[16] rmarkdown_2.17     textshaping_0.3.6  stringr_1.4.1     
-[19] munsell_0.5.0      proxy_0.4-27       compiler_4.1.3    
-[22] xfun_0.32          pkgconfig_2.0.3    systemfonts_1.0.4 
-[25] htmltools_0.5.3    downlit_0.4.2      tidyselect_1.2.0  
-[28] tibble_3.1.8       codetools_0.2-18   fansi_1.0.3       
-[31] dplyr_1.0.10       withr_2.5.0        sf_1.0-8          
-[34] wk_0.6.0           grid_4.1.3         jsonlite_1.8.3    
-[37] lwgeom_0.2-8       gtable_0.3.1       lifecycle_1.0.3   
-[40] DBI_1.1.3          magrittr_2.0.3     units_0.8-0       
-[43] scales_1.2.1       KernSmooth_2.23-20 cli_3.4.0         
-[46] stringi_1.7.6      cachem_1.0.6       farver_2.1.1      
-[49] bslib_0.4.1        ellipsis_0.3.2     ragg_1.2.4        
-[52] generics_0.1.3     vctrs_0.4.1        distill_1.5       
-[55] s2_1.1.0           tools_4.1.3        glue_1.6.2        
-[58] purrr_0.3.4        abind_1.4-5        parallel_4.1.3    
-[61] fastmap_1.1.0      yaml_2.3.5         colorspace_2.0-3  
-[64] terra_1.6-17       stars_0.5-6        gt_0.7.0          
-[67] classInt_0.4-7     memoise_2.0.1      knitr_1.40        
-[70] sass_0.4.2        
+ [1] fs_1.5.2            sf_1.0-8            lubridate_1.9.0    
+ [4] httr_1.4.4          rprojroot_2.0.3     tools_4.1.3        
+ [7] backports_1.4.1     bslib_0.4.1         utf8_1.2.2         
+[10] R6_2.5.1            KernSmooth_2.23-20  DBI_1.1.3          
+[13] colorspace_2.0-3    withr_2.5.0         tidyselect_1.2.0   
+[16] downlit_0.4.2       compiler_4.1.3      rvest_1.0.3        
+[19] textshaping_0.3.6   cli_3.4.0           gt_0.7.0           
+[22] xml2_1.3.3          labeling_0.4.2      bookdown_0.29      
+[25] sass_0.4.2          scales_1.2.1        classInt_0.4-7     
+[28] proxy_0.4-27        systemfonts_1.0.4   digest_0.6.29      
+[31] rmarkdown_2.17      pkgconfig_2.0.3     htmltools_0.5.3    
+[34] dbplyr_2.2.1        fastmap_1.1.0       highr_0.9          
+[37] rlang_1.0.6         readxl_1.4.1        rstudioapi_0.14    
+[40] jquerylib_0.1.4     farver_2.1.1        generics_0.1.3     
+[43] jsonlite_1.8.3      distill_1.5         googlesheets4_1.0.1
+[46] magrittr_2.0.3      s2_1.1.0            Rcpp_1.0.9         
+[49] munsell_0.5.0       fansi_1.0.3         abind_1.4-5        
+[52] lifecycle_1.0.3     terra_1.6-17        stringi_1.7.6      
+[55] yaml_2.3.5          grid_4.1.3          parallel_4.1.3     
+[58] crayon_1.5.2        stars_0.5-6         haven_2.5.1        
+[61] hms_1.1.2           knitr_1.40          pillar_1.8.1       
+[64] codetools_0.2-18    wk_0.6.0            reprex_2.0.2       
+[67] glue_1.6.2          evaluate_0.18       modelr_0.1.9       
+[70] vctrs_0.4.1         tzdb_0.3.0          cellranger_1.1.0   
+[73] gtable_0.3.1        assertthat_0.2.1    cachem_1.0.6       
+[76] xfun_0.32           mime_0.12           lwgeom_0.2-8       
+[79] broom_1.0.1         e1071_1.7-11        ragg_1.2.4         
+[82] class_7.3-20        googledrive_2.0.0   gargle_1.2.1       
+[85] memoise_2.0.1       units_0.8-0         timechange_0.1.1   
+[88] ellipsis_0.3.2      here_1.0.1         
 ```
 
 </div>
