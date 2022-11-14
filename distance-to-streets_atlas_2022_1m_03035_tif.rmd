@@ -1,5 +1,4 @@
 ---
-title: 'landuse atlas 2009'
 output:
     distill::distill_article:
         highlight: kate      ## styling of code
@@ -17,6 +16,8 @@ dev = 'ragg_png', fig.width = 9, fig.height = 6, dpi = 250, retina = 1)
 
 Sys.setlocale('LC_TIME', 'C')
 
+#sapply(list('tidyverse', 'ggplot2', 'raster', 'terra'),
+#       library, character.only = TRUE, logical.return = TRUE)
 library(patchwork)
 
 `%>%` <- magrittr::`%>%`
@@ -37,7 +38,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-     paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/','GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif')
+     paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/','GeoData/data-proc/atlas/distance-to-streets_atlas_2022_1m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -45,6 +46,7 @@ meta <-
 
 tif <-
   terra::rast(list.files(path, pattern = '.tif$', recursive = TRUE, full.names = TRUE))
+
 ```
 
 ```{r data-table}
@@ -58,7 +60,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/','GeoData/data-proc/atlas/landuse_atlas_2009_1m_03035_tif/landuse_atlas_2009_1m_03035_tif', '.rds'))
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/','GeoData/data-proc/atlas/distance-to-streets_atlas_2022_1m_03035_tif/distance-to-streets_atlas_2022_1m_03035_tif', '.rds'))
 
 ```
 
@@ -66,6 +68,7 @@ p_map <-
 p_map
 meta_gt
 ```
+
 
 
 <details><summary>Session Info</summary>

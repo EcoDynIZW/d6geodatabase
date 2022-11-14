@@ -37,7 +37,7 @@ ggplot2::theme_update(
 
 # get path
 path <-
-    paste(dir(path = c('C:/', 'E:/'), pattern = 'PopDynCloud$', recursive = T, include.dirs = T, full.names = T)[1],'GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif', sep = '/')
+    paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/','GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif')
 
 meta <-
       utils::read.csv(list.files(path, pattern = '.csv$', recursive = TRUE, full.names = TRUE)) %>%
@@ -58,7 +58,7 @@ meta_gt <- gt::gt(meta %>%
 
 ```{r map}
 p_map <-
- readRDS('E:/PopDynCloud/GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif.rds')
+ readRDS(paste0(ifelse(dir.exists('E:/PopDynCloud') == T, 'E:/PopDynCloud', 'C:/PopDynCloud'), '/','GeoData/data-proc/germany/distance-to-roads_germany_2022_100m_03035_tif/distance-to-roads_germany_2022_100m_03035_tif', '.rds'))
 
 ```
 
