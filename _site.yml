@@ -12,10 +12,13 @@ navbar:
     image: img/d6_white.png
   search: true
   right:
+    - text: "Wiki"
+      href: wiki.html
     - text: "About"
       href: about.html
     - icon: fa fa-home
       href: https://ecodynizw.github.io/EcoDynIZW
     - icon: fa fa-twitter
       href: https://twitter.com/EcoDynIZW
+  source_url: https://github.com/EcoDynIZW
 output: distill::distill_article

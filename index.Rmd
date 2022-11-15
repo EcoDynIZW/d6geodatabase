@@ -3,38 +3,12 @@ title: "D6 Geo Database"
 description: |
   This webpage provides a quick look-up source for geospatial data available for studies at the IZW Department of Ecological Dynamics.
 site: distill::distill_website
+listing: posts
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-```{r data, include=FALSE}
-library(tidyverse)
-# a table that collects all information
-data_table <- base::do.call(base::rbind, lapply(list.files(here::here(), pattern = , ".rmd$"), 
-                     function(x){
-  tibble(path = x) %>% 
-  dplyr::mutate(what = unlist(stringi::stri_split(path, regex = "_"))[1],
-    origin = unlist(stringi::stri_split(path, regex = "_"))[2],
-                year = unlist(stringi::stri_split(path, regex = "_"))[3]) %>% 
-  dplyr::mutate(distill = paste0("* [", gsub("-", " ", what), " (", year, ")](/d6geodatabase/",
-               gsub(pattern = ".rmd", replacement = ".html", x = path), ")"))
-  }))
-# a function, thats create the input for the inline code
-data_list <- lapply(unique(data_table$origin), function(x){
-  tab <- data_table %>%
-    dplyr::filter(origin %in% x)
-  
-  stringi::stri_c(
-    stringi::stri_c("<details><summary>", x,"</summary>"),
-    stringi::stri_c(tab$distill, collapse = "\n"),
-    stringi::stri_c("</details>"), 
-    collapse = "\n")
-})
-```
-
-`r stringi::stri_c(unlist(data_list), collapse = "\n")`
 
 ## Contact {.appendix}
 
